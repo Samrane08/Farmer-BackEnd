@@ -1,0 +1,12 @@
+E:\Farmer Project\FarmerViewer\Repository\bin\Debug\net8.0\Repository.deps.json
+E:\Farmer Project\FarmerViewer\Repository\bin\Debug\net8.0\Repository.dll
+E:\Farmer Project\FarmerViewer\Repository\bin\Debug\net8.0\Repository.pdb
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.dll
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\refint\Repository.dll
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.pdb
+E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\ref\Repository.dll

@@ -1,0 +1,12 @@
+E:\Farmer Project\FarmerViewer\Helper\bin\Debug\net8.0\Helper.deps.json
+E:\Farmer Project\FarmerViewer\Helper\bin\Debug\net8.0\Helper.dll
+E:\Farmer Project\FarmerViewer\Helper\bin\Debug\net8.0\Helper.pdb
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.csproj.AssemblyReference.cache
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.GeneratedMSBuildEditorConfig.editorconfig
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.AssemblyInfoInputs.cache
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.AssemblyInfo.cs
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.csproj.CoreCompileInputs.cache
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.dll
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\refint\Helper.dll
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.pdb
+E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\ref\Helper.dll

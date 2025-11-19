@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vpA2Jq7iLjU=",
+  "success": true,
+  "projectFilePath": "E:\\Farmer Project\\FarmerViewer\\Helper\\Helper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sameer.rane\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

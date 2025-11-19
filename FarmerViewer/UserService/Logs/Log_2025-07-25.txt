@@ -1,0 +1,5 @@
+2025-07-25 15:04:43 - :
+request coming
+2025-07-25 15:04:50 - :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at UserService.Controllers.AccountController.Logout() in E:\Namankit\Namankit-Microservices-BackEnd\Services\UserService\UserService\Controllers\AccountController.cs:line 1048
