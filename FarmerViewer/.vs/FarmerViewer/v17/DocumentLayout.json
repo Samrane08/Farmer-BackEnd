@@ -3,172 +3,28 @@
   "WorkspaceRootPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|solutionrelative:userservice\\userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\userservice\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|solutionrelative:userservice\\userservice\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\userservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|solutionrelative:userservice\\userservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\userservice\\models\\helpers\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|solutionrelative:userservice\\userservice\\models\\helpers\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|solutionrelative:userservice\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\entityrolemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\entityrolemapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\entitytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\entitytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\errorlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\errorlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\eventlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\eventlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\logindetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\logindetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\service\\implementation\\usermanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|solutionrelative:service\\implementation\\usermanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\service\\exceptionlogging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\service\\exceptionlogging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\userservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\service\\configuration\\applicationseedingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|solutionrelative:service\\configuration\\applicationseedingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\service\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\service\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\service\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|solutionrelative:service\\configuration\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\service\\currentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\service\\currentuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\migrations\\20251118105146_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\migrations\\20251118105146_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\implementation\\dapperr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\implementation\\dapperr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\common\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\common\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\apibasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14A66091-83CF-47CD-A3E9-4A2B043C05B3}|Gateway\\Gateway.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{14A66091-83CF-47CD-A3E9-4A2B043C05B3}|Gateway\\Gateway.csproj|solutionrelative:gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\service\\interface\\iusermanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|solutionrelative:service\\interface\\iusermanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\service\\identity\\identityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|solutionrelative:service\\identity\\identityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\repository\\entity\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39E0D8EE-E629-414D-B58C-107861E1D327}|Repository\\Repository.csproj|solutionrelative:repository\\entity\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC03091-FE2C-4038-81CF-17046AA3C615}|UserService\\UserService.csproj|solutionrelative:userservice\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74F40644-67A4-4C21-A179-23EA17F67E02}|Helper\\Helper.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\helper\\exceptionlogging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74F40644-67A4-4C21-A179-23EA17F67E02}|Helper\\Helper.csproj|solutionrelative:helper\\exceptionlogging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74F40644-67A4-4C21-A179-23EA17F67E02}|Helper\\Helper.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\helper\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74F40644-67A4-4C21-A179-23EA17F67E02}|Helper\\Helper.csproj|solutionrelative:helper\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\service\\interface\\isessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|solutionrelative:service\\interface\\isessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\service\\implementation\\menumanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0320037C-8C75-4188-97B8-53649EE1A21D}|Service\\Service.csproj|solutionrelative:service\\implementation\\menumanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74F40644-67A4-4C21-A179-23EA17F67E02}|Helper\\Helper.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\helper\\querystringencryptdecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74F40644-67A4-4C21-A179-23EA17F67E02}|Helper\\Helper.csproj|solutionrelative:helper\\querystringencryptdecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74F40644-67A4-4C21-A179-23EA17F67E02}|Helper\\Helper.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\helper\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74F40644-67A4-4C21-A179-23EA17F67E02}|Helper\\Helper.csproj|solutionrelative:helper\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14A66091-83CF-47CD-A3E9-4A2B043C05B3}|Gateway\\Gateway.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14A66091-83CF-47CD-A3E9-4A2B043C05B3}|Gateway\\Gateway.csproj|solutionrelative:gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14A66091-83CF-47CD-A3E9-4A2B043C05B3}|Gateway\\Gateway.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\gateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{14A66091-83CF-47CD-A3E9-4A2B043C05B3}|Gateway\\Gateway.csproj|solutionrelative:gateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|d:\\vs2022projects\\farmer-backend\\farmerviewer\\userservice\\userservice\\helpers\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0612AEA0-D994-4D27-BC23-C6D3C9E8080C}|userservice\\UserService\\UserService.csproj|solutionrelative:userservice\\userservice\\helpers\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -211,547 +67,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BaseAuditableEntity.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\BaseAuditableEntity.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\BaseAuditableEntity.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\BaseAuditableEntity.cs",
-              "RelativeToolTip": "Repository\\Entity\\BaseAuditableEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Models\\Helpers\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "userservice\\UserService\\Models\\Helpers\\JwtSettings.cs",
+              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Models\\Helpers\\JwtSettings.cs",
+              "RelativeToolTip": "userservice\\UserService\\Models\\Helpers\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:51:40.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\BaseEntity.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\BaseEntity.cs",
-              "RelativeToolTip": "Repository\\Entity\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:51:39.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "departments.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\departments.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\departments.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\departments.cs",
-              "RelativeToolTip": "Repository\\Entity\\departments.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:51:38.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EntityRoleMapping.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\EntityRoleMapping.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\EntityRoleMapping.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\EntityRoleMapping.cs",
-              "RelativeToolTip": "Repository\\Entity\\EntityRoleMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:51:37.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\ApplicationUser.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\ApplicationUser.cs",
-              "RelativeToolTip": "Repository\\Entity\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:44:35.609Z",
+              "WhenOpened": "2025-12-08T12:40:26.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Repository\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Repository\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAANAAAAAAAAAA==",
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Repository\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "userservice\\UserService\\Repository\\AuthRepository.cs",
+              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Repository\\AuthRepository.cs",
+              "RelativeToolTip": "userservice\\UserService\\Repository\\AuthRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:39:30.686Z",
+              "WhenOpened": "2025-12-08T12:25:34.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Helpers\\TokenService.cs",
+              "RelativeDocumentMoniker": "userservice\\UserService\\Helpers\\TokenService.cs",
+              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Helpers\\TokenService.cs",
+              "RelativeToolTip": "userservice\\UserService\\Helpers\\TokenService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwCAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T12:19:52.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Configuration\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Repository\\Configuration\\DependencyInjection.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Configuration\\DependencyInjection.cs",
-              "RelativeToolTip": "Repository\\Configuration\\DependencyInjection.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA0wBYAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:44:44.68Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\appsettings.json",
+              "RelativeDocumentMoniker": "userservice\\UserService\\appsettings.json",
+              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\appsettings.json",
+              "RelativeToolTip": "userservice\\UserService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-08T12:19:39.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\appsettings.json",
-              "RelativeDocumentMoniker": "UserService\\appsettings.json",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\appsettings.json",
-              "RelativeToolTip": "UserService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-08T06:36:37.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EntityType.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\EntityType.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\EntityType.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\EntityType.cs",
-              "RelativeToolTip": "Repository\\Entity\\EntityType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:51:36.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ErrorLogger.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\ErrorLogger.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\ErrorLogger.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\ErrorLogger.cs",
-              "RelativeToolTip": "Repository\\Entity\\ErrorLogger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:51:35.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EventLogger.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\EventLogger.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\EventLogger.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\EventLogger.cs",
-              "RelativeToolTip": "Repository\\Entity\\EventLogger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:51:34.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "logindetails.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\logindetails.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\logindetails.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\logindetails.cs",
-              "RelativeToolTip": "Repository\\Entity\\logindetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:51:30.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserService",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\UserService.csproj",
-              "RelativeDocumentMoniker": "UserService\\UserService.csproj",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\UserService.csproj",
-              "RelativeToolTip": "UserService\\UserService.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-08T06:42:23.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApplicationSeedingConfig.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Configuration\\ApplicationSeedingConfig.cs",
-              "RelativeDocumentMoniker": "Service\\Configuration\\ApplicationSeedingConfig.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Configuration\\ApplicationSeedingConfig.cs",
-              "RelativeToolTip": "Service\\Configuration\\ApplicationSeedingConfig.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAIwBcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:38:19.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ExceptionLogging.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Service\\ExceptionLogging.cs",
-              "RelativeDocumentMoniker": "UserService\\Service\\ExceptionLogging.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Service\\ExceptionLogging.cs",
-              "RelativeToolTip": "UserService\\Service\\ExceptionLogging.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:37:12.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Program.cs",
-              "RelativeDocumentMoniker": "UserService\\Program.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Program.cs",
-              "RelativeToolTip": "UserService\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:42:08.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SessionService.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Service\\SessionService.cs",
-              "RelativeDocumentMoniker": "UserService\\Service\\SessionService.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Service\\SessionService.cs",
-              "RelativeToolTip": "UserService\\Service\\SessionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:43:23.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserManagerService.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Implementation\\UserManagerService.cs",
-              "RelativeDocumentMoniker": "Service\\Implementation\\UserManagerService.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Implementation\\UserManagerService.cs",
-              "RelativeToolTip": "Service\\Implementation\\UserManagerService.cs",
-              "ViewState": "AgIAABgBAAAAAAAAAAAmwCkBAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:43:26.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Configuration\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Service\\Configuration\\DependencyInjection.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Configuration\\DependencyInjection.cs",
-              "RelativeToolTip": "Service\\Configuration\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T05:05:04.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CurrentUserService.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Service\\CurrentUserService.cs",
-              "RelativeDocumentMoniker": "UserService\\Service\\CurrentUserService.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Service\\CurrentUserService.cs",
-              "RelativeToolTip": "UserService\\Service\\CurrentUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:37:08.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Repository.csproj",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Repository.csproj",
-              "RelativeDocumentMoniker": "Repository\\Repository.csproj",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Repository.csproj",
-              "RelativeToolTip": "Repository\\Repository.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-18T10:30:29.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Repository\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Repository\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAEICAAAAAAAAAAAUwGICAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T05:13:18.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Dapperr.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Implementation\\Dapperr.cs",
-              "RelativeDocumentMoniker": "Repository\\Implementation\\Dapperr.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Implementation\\Dapperr.cs",
-              "RelativeToolTip": "Repository\\Implementation\\Dapperr.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAUwGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T05:13:00.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Result.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Common\\Result.cs",
-              "RelativeDocumentMoniker": "Repository\\Common\\Result.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Common\\Result.cs",
-              "RelativeToolTip": "Repository\\Common\\Result.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T05:11:59.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "UserService\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "UserService\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T04:55:19.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "20251118105146_InitialCreate.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Migrations\\20251118105146_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Repository\\Migrations\\20251118105146_InitialCreate.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Migrations\\20251118105146_InitialCreate.cs",
-              "RelativeToolTip": "Repository\\Migrations\\20251118105146_InitialCreate.cs",
-              "ViewState": "AgIAANoBAAAAAAAAAAAUwPoBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:51:46.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "APIBaseController.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\APIBaseController.cs",
-              "RelativeDocumentMoniker": "UserService\\Controllers\\APIBaseController.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\APIBaseController.cs",
-              "RelativeToolTip": "UserService\\Controllers\\APIBaseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:18:26.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AdministratorController.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\AdministratorController.cs",
-              "RelativeDocumentMoniker": "UserService\\Controllers\\AdministratorController.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\AdministratorController.cs",
-              "RelativeToolTip": "UserService\\Controllers\\AdministratorController.cs",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAcwC4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:43:22.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "UserService\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "UserService\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAFADAAAAAAAAAAAcwH0DAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "userservice\\UserService\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "userservice\\UserService\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:18:25.294Z",
+              "WhenOpened": "2025-12-08T12:13:25.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Gateway\\appsettings.json",
-              "RelativeDocumentMoniker": "Gateway\\appsettings.json",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Gateway\\appsettings.json",
-              "RelativeToolTip": "Gateway\\appsettings.json",
-              "ViewState": "AgIAAEoAAAAAAAAAAABRwFUAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-18T08:59:49.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "IUserManagerService.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Interface\\IUserManagerService.cs",
-              "RelativeDocumentMoniker": "Service\\Interface\\IUserManagerService.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Interface\\IUserManagerService.cs",
-              "RelativeToolTip": "Service\\Interface\\IUserManagerService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA6wC4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T12:27:05.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ApplicationRole.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\ApplicationRole.cs",
-              "RelativeDocumentMoniker": "Repository\\Entity\\ApplicationRole.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Entity\\ApplicationRole.cs",
-              "RelativeToolTip": "Repository\\Entity\\ApplicationRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:44:36.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IdentityService.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Identity\\IdentityService.cs",
-              "RelativeDocumentMoniker": "Service\\Identity\\IdentityService.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Identity\\IdentityService.cs",
-              "RelativeToolTip": "Service\\Identity\\IdentityService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:44:41.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "UserService\\Controllers\\ProfileController.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "UserService\\Controllers\\ProfileController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T10:43:25.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "MenuManagementService.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Implementation\\MenuManagementService.cs",
-              "RelativeDocumentMoniker": "Service\\Implementation\\MenuManagementService.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Implementation\\MenuManagementService.cs",
-              "RelativeToolTip": "Service\\Implementation\\MenuManagementService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowBYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:41:32.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ExceptionLogging.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\ExceptionLogging.cs",
-              "RelativeDocumentMoniker": "Helper\\ExceptionLogging.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\ExceptionLogging.cs",
-              "RelativeToolTip": "Helper\\ExceptionLogging.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:08:17.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Extensions.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Extensions.cs",
-              "RelativeDocumentMoniker": "Helper\\Extensions.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Extensions.cs",
-              "RelativeToolTip": "Helper\\Extensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:08:16.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ISessionService.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Interface\\ISessionService.cs",
-              "RelativeDocumentMoniker": "Service\\Interface\\ISessionService.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Interface\\ISessionService.cs",
-              "RelativeToolTip": "Service\\Interface\\ISessionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:32:25.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "QueryStringEncryptDecrypt.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\QueryStringEncryptDecrypt.cs",
-              "RelativeDocumentMoniker": "Helper\\QueryStringEncryptDecrypt.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\QueryStringEncryptDecrypt.cs",
-              "RelativeToolTip": "Helper\\QueryStringEncryptDecrypt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:08:15.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Utility.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Utility.cs",
-              "RelativeDocumentMoniker": "Helper\\Utility.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Utility.cs",
-              "RelativeToolTip": "Helper\\Utility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:08:14.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Gateway\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Gateway\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Gateway\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Gateway\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-18T08:59:25.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Gateway\\Program.cs",
-              "RelativeDocumentMoniker": "Gateway\\Program.cs",
-              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Gateway\\Program.cs",
-              "RelativeToolTip": "Gateway\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABHAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Program.cs",
+              "RelativeDocumentMoniker": "userservice\\UserService\\Program.cs",
+              "ToolTip": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\userservice\\UserService\\Program.cs",
+              "RelativeToolTip": "userservice\\UserService\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:46:04.367Z",
+              "WhenOpened": "2025-12-08T12:09:14.729Z",
               "EditorCaption": ""
             }
           ]
