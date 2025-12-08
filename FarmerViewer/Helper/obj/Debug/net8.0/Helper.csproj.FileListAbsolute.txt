@@ -10,3 +10,16 @@ E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.dll
 E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\refint\Helper.dll
 E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\Helper.pdb
 E:\Farmer Project\FarmerViewer\Helper\obj\Debug\net8.0\ref\Helper.dll
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\bin\Debug\net8.0\Helper.deps.json
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\bin\Debug\net8.0\Helper.dll
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\bin\Debug\net8.0\Helper.pdb
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\Helper.csproj.AssemblyReference.cache
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\Helper.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\Helper.AssemblyInfoInputs.cache
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\Helper.AssemblyInfo.cs
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\Helper.csproj.CoreCompileInputs.cache
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\Helper.sourcelink.json
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\Helper.dll
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\refint\Helper.dll
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\Helper.pdb
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Helper\obj\Debug\net8.0\ref\Helper.dll

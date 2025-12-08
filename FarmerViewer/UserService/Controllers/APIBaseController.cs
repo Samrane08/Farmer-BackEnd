@@ -9,5 +9,5 @@ namespace UserService.Controllers;
 [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 [ApiExplorerSettings(GroupName = "UserService")]
 public class APIBaseController : ControllerBase
-{ 
+{
 }

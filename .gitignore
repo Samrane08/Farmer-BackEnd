@@ -1,0 +1,26 @@
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific files
+.vs/
+.vscode/
+.idea/
+
+# Ignore the Visual Studio config folder
+.vsconfig/
+
+# Ignore packages and restore files
+.nuget/
+packages/
+
+# Ignore compiled files (DLLs, EXEs, PDBs, etc.)
+*.dll
+*.exe
+*.pdb
+*.cache
+*.user
+*.suo
+*.txt
+
+.vs/

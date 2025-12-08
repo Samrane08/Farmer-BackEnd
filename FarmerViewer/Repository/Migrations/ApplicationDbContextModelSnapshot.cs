@@ -20,590 +20,590 @@ namespace Repository.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<string>("ClaimType")
-                        .HasColumnType("longtext");
+                b.Property<string>("ClaimType")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("ClaimValue")
-                        .HasColumnType("longtext");
+                b.Property<string>("ClaimValue")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("RoleId")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("RoleId")
+                    .IsRequired()
+                    .HasColumnType("varchar(255)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("RoleId");
+                b.HasIndex("RoleId");
 
-                    b.ToTable("AspNetRoleClaims", (string)null);
-                });
+                b.ToTable("AspNetRoleClaims", (string)null);
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<string>("ClaimType")
-                        .HasColumnType("longtext");
+                b.Property<string>("ClaimType")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("ClaimValue")
-                        .HasColumnType("longtext");
+                b.Property<string>("ClaimValue")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("UserId")
+                    .IsRequired()
+                    .HasColumnType("varchar(255)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                b.HasIndex("UserId");
 
-                    b.ToTable("AspNetUserClaims", (string)null);
-                });
+                b.ToTable("AspNetUserClaims", (string)null);
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
-                {
-                    b.Property<string>("LoginProvider")
-                        .HasColumnType("varchar(255)");
+            {
+                b.Property<string>("LoginProvider")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("ProviderKey")
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("ProviderKey")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("ProviderDisplayName")
-                        .HasColumnType("longtext");
+                b.Property<string>("ProviderDisplayName")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("UserId")
+                    .IsRequired()
+                    .HasColumnType("varchar(255)");
 
-                    b.HasKey("LoginProvider", "ProviderKey");
+                b.HasKey("LoginProvider", "ProviderKey");
 
-                    b.HasIndex("UserId");
+                b.HasIndex("UserId");
 
-                    b.ToTable("AspNetUserLogins", (string)null);
-                });
+                b.ToTable("AspNetUserLogins", (string)null);
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("varchar(255)");
+            {
+                b.Property<string>("UserId")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("RoleId")
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("RoleId")
+                    .HasColumnType("varchar(255)");
 
-                    b.HasKey("UserId", "RoleId");
+                b.HasKey("UserId", "RoleId");
 
-                    b.HasIndex("RoleId");
+                b.HasIndex("RoleId");
 
-                    b.ToTable("AspNetUserRoles", (string)null);
-                });
+                b.ToTable("AspNetUserRoles", (string)null);
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("varchar(255)");
+            {
+                b.Property<string>("UserId")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("LoginProvider")
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("LoginProvider")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("Name")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("Value")
-                        .HasColumnType("longtext");
+                b.Property<string>("Value")
+                    .HasColumnType("longtext");
 
-                    b.HasKey("UserId", "LoginProvider", "Name");
+                b.HasKey("UserId", "LoginProvider", "Name");
 
-                    b.ToTable("AspNetUserTokens", (string)null);
-                });
+                b.ToTable("AspNetUserTokens", (string)null);
+            });
 
             modelBuilder.Entity("Repository.Entity.ApplicationRole", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
+            {
+                b.Property<string>("Id")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("longtext");
+                b.Property<string>("ConcurrencyStamp")
+                    .IsConcurrencyToken()
+                    .HasColumnType("longtext");
 
-                    b.Property<int?>("DepartmentId")
-                        .HasColumnType("int");
+                b.Property<int?>("DepartmentId")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                b.Property<string>("Name")
+                    .HasMaxLength(256)
+                    .HasColumnType("varchar(256)");
 
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                b.Property<string>("NormalizedName")
+                    .HasMaxLength(256)
+                    .HasColumnType("varchar(256)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasDatabaseName("RoleNameIndex");
+                b.HasIndex("NormalizedName")
+                    .IsUnique()
+                    .HasDatabaseName("RoleNameIndex");
 
-                    b.HasIndex("Name", "DepartmentId")
-                        .IsUnique();
+                b.HasIndex("Name", "DepartmentId")
+                    .IsUnique();
 
-                    b.ToTable("AspNetRoles", (string)null);
-                });
+                b.ToTable("AspNetRoles", (string)null);
+            });
 
             modelBuilder.Entity("Repository.Entity.ApplicationUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
+            {
+                b.Property<string>("Id")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
+                b.Property<int>("AccessFailedCount")
+                    .HasColumnType("int");
 
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("longtext");
+                b.Property<string>("ConcurrencyStamp")
+                    .IsConcurrencyToken()
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("Email")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                b.Property<string>("Email")
+                    .HasMaxLength(256)
+                    .HasColumnType("varchar(256)");
 
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool>("EmailConfirmed")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool>("LockoutEnabled")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetime");
+                b.Property<DateTimeOffset?>("LockoutEnd")
+                    .HasColumnType("datetime");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("longtext");
+                b.Property<string>("Name")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                b.Property<string>("NormalizedEmail")
+                    .HasMaxLength(256)
+                    .HasColumnType("varchar(256)");
 
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                b.Property<string>("NormalizedUserName")
+                    .HasMaxLength(256)
+                    .HasColumnType("varchar(256)");
 
-                    b.Property<string>("Password")
-                        .HasColumnType("longtext");
+                b.Property<string>("Password")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("longtext");
+                b.Property<string>("PasswordHash")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("longtext");
+                b.Property<string>("PhoneNumber")
+                    .HasColumnType("longtext");
 
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool>("PhoneNumberConfirmed")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("longtext");
+                b.Property<string>("SecurityStamp")
+                    .HasColumnType("longtext");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                b.Property<int>("Status")
+                    .HasColumnType("int");
 
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool>("TwoFactorEnabled")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("longtext");
+                b.Property<string>("UserId")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("varchar(256)");
+                b.Property<string>("UserName")
+                    .HasMaxLength(256)
+                    .HasColumnType("varchar(256)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("NormalizedEmail")
-                        .HasDatabaseName("EmailIndex");
+                b.HasIndex("NormalizedEmail")
+                    .HasDatabaseName("EmailIndex");
 
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasDatabaseName("UserNameIndex");
+                b.HasIndex("NormalizedUserName")
+                    .IsUnique()
+                    .HasDatabaseName("UserNameIndex");
 
-                    b.ToTable("AspNetUsers", (string)null);
-                });
+                b.ToTable("AspNetUsers", (string)null);
+            });
 
             modelBuilder.Entity("Repository.Entity.EntityRoleMapping", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime>("Created")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("CreatedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<int>("EntityTypeId")
-                        .HasColumnType("int");
+                b.Property<int>("EntityTypeId")
+                    .HasColumnType("int");
 
-                    b.Property<DateTime?>("LastModified")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("LastModified")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("LastModifiedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("LastModifiedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("RoleId")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                b.Property<string>("RoleId")
+                    .IsRequired()
+                    .HasColumnType("longtext");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                b.Property<int>("Status")
+                    .HasColumnType("int");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("EntittyRoleMapping");
-                });
+                b.ToTable("EntittyRoleMapping");
+            });
 
             modelBuilder.Entity("Repository.Entity.EntityType", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime>("Created")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("CreatedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("EntityTypeName")
-                        .HasColumnType("longtext");
+                b.Property<string>("EntityTypeName")
+                    .HasColumnType("longtext");
 
-                    b.Property<DateTime?>("LastModified")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("LastModified")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("LastModifiedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("LastModifiedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                b.Property<int>("Status")
+                    .HasColumnType("int");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("EntityType");
-                });
+                b.ToTable("EntityType");
+            });
 
             modelBuilder.Entity("Repository.Entity.ErrorLogger", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
+            {
+                b.Property<string>("Id")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("CreatedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<DateTime?>("CreatedOn")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("CreatedOn")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("ErrorAt")
-                        .HasColumnType("longtext");
+                b.Property<string>("ErrorAt")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("Exception")
-                        .HasColumnType("longtext");
+                b.Property<string>("Exception")
+                    .HasColumnType("longtext");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("ErrorLogger");
-                });
+                b.ToTable("ErrorLogger");
+            });
 
             modelBuilder.Entity("Repository.Entity.EventLogger", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
+            {
+                b.Property<string>("Id")
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("AbsoluteURL")
-                        .HasColumnType("longtext");
+                b.Property<string>("AbsoluteURL")
+                    .HasColumnType("longtext");
 
-                    b.Property<DateTime?>("CreatedOn")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("CreatedOn")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("HttpMethod")
-                        .HasColumnType("longtext");
+                b.Property<string>("HttpMethod")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("IPAddress")
-                        .HasColumnType("longtext");
+                b.Property<string>("IPAddress")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("RequestURL")
-                        .HasColumnType("longtext");
+                b.Property<string>("RequestURL")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("SessionId")
-                        .HasColumnType("longtext");
+                b.Property<string>("SessionId")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("longtext");
+                b.Property<string>("UserId")
+                    .HasColumnType("longtext");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("EventLogger");
-                });
+                b.ToTable("EventLogger");
+            });
 
             modelBuilder.Entity("Repository.Entity.MenuMapping", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime>("Created")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("CreatedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<int>("EntityMappingId")
-                        .HasColumnType("int");
+                b.Property<int>("EntityMappingId")
+                    .HasColumnType("int");
 
-                    b.Property<DateTime?>("LastModified")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("LastModified")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("LastModifiedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("LastModifiedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<int>("MenuId")
-                        .HasColumnType("int");
+                b.Property<int>("MenuId")
+                    .HasColumnType("int");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                b.Property<int>("Status")
+                    .HasColumnType("int");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("MenuMapping");
-                });
+                b.ToTable("MenuMapping");
+            });
 
             modelBuilder.Entity("Repository.Entity.MenuMaster", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime>("Created")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("CreatedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("Icon")
-                        .HasColumnType("longtext");
+                b.Property<string>("Icon")
+                    .HasColumnType("longtext");
 
-                    b.Property<DateTime?>("LastModified")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("LastModified")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("LastModifiedBy")
-                        .HasColumnType("longtext");
+                b.Property<string>("LastModifiedBy")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("MenuName")
-                        .HasColumnType("longtext");
+                b.Property<string>("MenuName")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("MenuNameMr")
-                        .HasColumnType("longtext");
+                b.Property<string>("MenuNameMr")
+                    .HasColumnType("longtext");
 
-                    b.Property<int?>("ParentId")
-                        .HasColumnType("int");
+                b.Property<int?>("ParentId")
+                    .HasColumnType("int");
 
-                    b.Property<int>("Sort")
-                        .HasColumnType("int");
+                b.Property<int>("Sort")
+                    .HasColumnType("int");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                b.Property<int>("Status")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Url")
-                        .HasColumnType("longtext");
+                b.Property<string>("Url")
+                    .HasColumnType("longtext");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("MenuMaster");
-                });
+                b.ToTable("MenuMaster");
+            });
 
             modelBuilder.Entity("Repository.Entity.UserNumericIdentity", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+            {
+                b.Property<long>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("bigint");
 
-                    b.Property<DateTime?>("LoginAt")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("LoginAt")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("SessionId")
-                        .HasColumnType("longtext");
+                b.Property<string>("SessionId")
+                    .HasColumnType("longtext");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("longtext");
+                b.Property<string>("UserId")
+                    .HasColumnType("longtext");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("AspNetUserNumericIdentity");
-                });
+                b.ToTable("AspNetUserNumericIdentity");
+            });
 
             modelBuilder.Entity("Repository.Entity.departments", b =>
-                {
-                    b.Property<int>("DepartmentID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("DepartmentID")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    b.Property<string>("DepartmentName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                b.Property<string>("DepartmentName")
+                    .IsRequired()
+                    .HasColumnType("longtext");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool>("IsActive")
+                    .HasColumnType("tinyint(1)");
 
-                    b.HasKey("DepartmentID");
+                b.HasKey("DepartmentID");
 
-                    b.ToTable("departments");
-                });
+                b.ToTable("departments");
+            });
 
             modelBuilder.Entity("Repository.Entity.logindetails", b =>
-                {
-                    b.Property<long>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+            {
+                b.Property<long>("ID")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("bigint");
 
-                    b.Property<int?>("Age")
-                        .HasColumnType("int");
+                b.Property<int?>("Age")
+                    .HasColumnType("int");
 
-                    b.Property<string>("CreatedBy")
-                        .HasMaxLength(255)
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("CreatedBy")
+                    .HasMaxLength(255)
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<DateTime?>("CreatedOn")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("CreatedOn")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("DOB")
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
+                b.Property<string>("DOB")
+                    .HasMaxLength(20)
+                    .HasColumnType("varchar(20)");
 
-                    b.Property<int?>("DistrictId")
-                        .HasColumnType("int");
+                b.Property<int?>("DistrictId")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Domain")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                b.Property<string>("Domain")
+                    .HasMaxLength(50)
+                    .HasColumnType("varchar(50)");
 
-                    b.Property<string>("EmailId")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                b.Property<string>("EmailId")
+                    .HasMaxLength(50)
+                    .HasColumnType("varchar(50)");
 
-                    b.Property<string>("FullName")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                b.Property<string>("FullName")
+                    .HasMaxLength(150)
+                    .HasColumnType("varchar(150)");
 
-                    b.Property<string>("FullName_mr")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                b.Property<string>("FullName_mr")
+                    .HasMaxLength(150)
+                    .HasColumnType("varchar(150)");
 
-                    b.Property<string>("Gender")
-                        .HasMaxLength(10)
-                        .HasColumnType("varchar(10)");
+                b.Property<string>("Gender")
+                    .HasMaxLength(10)
+                    .HasColumnType("varchar(10)");
 
-                    b.Property<bool?>("IsAadharVerified")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool?>("IsAadharVerified")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool>("IsActive")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool>("IsDeleted")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<bool?>("IsEmailVerified")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool?>("IsEmailVerified")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<bool?>("IsFirstLogin")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool?>("IsFirstLogin")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<bool?>("IsMobileVerified")
-                        .HasColumnType("tinyint(1)");
+                b.Property<bool?>("IsMobileVerified")
+                    .HasColumnType("tinyint(1)");
 
-                    b.Property<DateTime?>("LastModified")
-                        .HasColumnType("datetime(6)");
+                b.Property<DateTime?>("LastModified")
+                    .HasColumnType("datetime(6)");
 
-                    b.Property<string>("LastModifiedBy")
-                        .HasMaxLength(255)
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("LastModifiedBy")
+                    .HasMaxLength(255)
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("MobileNo")
-                        .HasMaxLength(10)
-                        .HasColumnType("varchar(10)");
+                b.Property<string>("MobileNo")
+                    .HasMaxLength(10)
+                    .HasColumnType("varchar(10)");
 
-                    b.Property<string>("Password")
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
+                b.Property<string>("Password")
+                    .HasMaxLength(200)
+                    .HasColumnType("varchar(200)");
 
-                    b.Property<string>("UserId")
-                        .HasMaxLength(255)
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("UserId")
+                    .HasMaxLength(255)
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("UserIdentity")
-                        .HasMaxLength(255)
-                        .HasColumnType("varchar(255)");
+                b.Property<string>("UserIdentity")
+                    .HasMaxLength(255)
+                    .HasColumnType("varchar(255)");
 
-                    b.Property<string>("UserName")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                b.Property<string>("UserName")
+                    .HasMaxLength(50)
+                    .HasColumnType("varchar(50)");
 
-                    b.Property<int?>("WorkflowId")
-                        .HasColumnType("int");
+                b.Property<int?>("WorkflowId")
+                    .HasColumnType("int");
 
-                    b.HasKey("ID");
+                b.HasKey("ID");
 
-                    b.ToTable("logindetails");
-                });
+                b.ToTable("logindetails");
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
-                {
-                    b.HasOne("Repository.Entity.ApplicationRole", null)
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+            {
+                b.HasOne("Repository.Entity.ApplicationRole", null)
+                    .WithMany()
+                    .HasForeignKey("RoleId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
-                {
-                    b.HasOne("Repository.Entity.ApplicationUser", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+            {
+                b.HasOne("Repository.Entity.ApplicationUser", null)
+                    .WithMany()
+                    .HasForeignKey("UserId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
-                {
-                    b.HasOne("Repository.Entity.ApplicationUser", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+            {
+                b.HasOne("Repository.Entity.ApplicationUser", null)
+                    .WithMany()
+                    .HasForeignKey("UserId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
-                {
-                    b.HasOne("Repository.Entity.ApplicationRole", null)
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+            {
+                b.HasOne("Repository.Entity.ApplicationRole", null)
+                    .WithMany()
+                    .HasForeignKey("RoleId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
 
-                    b.HasOne("Repository.Entity.ApplicationUser", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+                b.HasOne("Repository.Entity.ApplicationUser", null)
+                    .WithMany()
+                    .HasForeignKey("UserId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
-                {
-                    b.HasOne("Repository.Entity.ApplicationUser", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
+            {
+                b.HasOne("Repository.Entity.ApplicationUser", null)
+                    .WithMany()
+                    .HasForeignKey("UserId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
 #pragma warning restore 612, 618
         }
     }

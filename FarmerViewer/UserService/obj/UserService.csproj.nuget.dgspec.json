@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Farmer Project\\FarmerViewer\\UserService\\UserService.csproj": {}
+    "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "E:\\Farmer Project\\FarmerViewer\\Helper\\Helper.csproj": {
+    "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Farmer Project\\FarmerViewer\\Helper\\Helper.csproj",
+        "projectUniqueName": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Helper.csproj",
         "projectName": "Helper",
-        "projectPath": "E:\\Farmer Project\\FarmerViewer\\Helper\\Helper.csproj",
-        "packagesPath": "C:\\Users\\sameer.rane\\.nuget\\packages\\",
-        "outputPath": "E:\\Farmer Project\\FarmerViewer\\Helper\\obj\\",
+        "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Helper.csproj",
+        "packagesPath": "C:\\Users\\subhajit.chakraborty\\.nuget\\packages\\",
+        "outputPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sameer.rane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\subhajit.chakraborty\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,24 +72,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Farmer Project\\FarmerViewer\\Model\\Model.csproj": {
+    "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Farmer Project\\FarmerViewer\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "E:\\Farmer Project\\FarmerViewer\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\sameer.rane\\.nuget\\packages\\",
-        "outputPath": "E:\\Farmer Project\\FarmerViewer\\Model\\obj\\",
+        "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\subhajit.chakraborty\\.nuget\\packages\\",
+        "outputPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sameer.rane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\subhajit.chakraborty\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,6 +98,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -136,24 +138,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Farmer Project\\FarmerViewer\\Repository\\Repository.csproj": {
+    "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Farmer Project\\FarmerViewer\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "E:\\Farmer Project\\FarmerViewer\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\sameer.rane\\.nuget\\packages\\",
-        "outputPath": "E:\\Farmer Project\\FarmerViewer\\Repository\\obj\\",
+        "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\subhajit.chakraborty\\.nuget\\packages\\",
+        "outputPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sameer.rane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\subhajit.chakraborty\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -162,6 +164,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -192,13 +195,27 @@
             },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.3.1, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.11, )"
             },
-            "MySql.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
@@ -219,24 +236,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Farmer Project\\FarmerViewer\\Service\\Service.csproj": {
+    "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Farmer Project\\FarmerViewer\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "E:\\Farmer Project\\FarmerViewer\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\sameer.rane\\.nuget\\packages\\",
-        "outputPath": "E:\\Farmer Project\\FarmerViewer\\Service\\obj\\",
+        "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\subhajit.chakraborty\\.nuget\\packages\\",
+        "outputPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sameer.rane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\subhajit.chakraborty\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -245,20 +262,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Farmer Project\\FarmerViewer\\Helper\\Helper.csproj": {
-                "projectPath": "E:\\Farmer Project\\FarmerViewer\\Helper\\Helper.csproj"
+              "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Helper.csproj": {
+                "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Helper.csproj"
               },
-              "E:\\Farmer Project\\FarmerViewer\\Model\\Model.csproj": {
-                "projectPath": "E:\\Farmer Project\\FarmerViewer\\Model\\Model.csproj"
+              "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Model\\Model.csproj": {
+                "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Model\\Model.csproj"
               },
-              "E:\\Farmer Project\\FarmerViewer\\Repository\\Repository.csproj": {
-                "projectPath": "E:\\Farmer Project\\FarmerViewer\\Repository\\Repository.csproj"
+              "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Repository\\Repository.csproj"
               }
             }
           }
@@ -294,24 +312,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Farmer Project\\FarmerViewer\\UserService\\UserService.csproj": {
+    "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Farmer Project\\FarmerViewer\\UserService\\UserService.csproj",
+        "projectUniqueName": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "E:\\Farmer Project\\FarmerViewer\\UserService\\UserService.csproj",
-        "packagesPath": "C:\\Users\\sameer.rane\\.nuget\\packages\\",
-        "outputPath": "E:\\Farmer Project\\FarmerViewer\\UserService\\obj\\",
+        "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\UserService.csproj",
+        "packagesPath": "C:\\Users\\subhajit.chakraborty\\.nuget\\packages\\",
+        "outputPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sameer.rane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\subhajit.chakraborty\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -320,14 +338,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Farmer Project\\FarmerViewer\\Service\\Service.csproj": {
-                "projectPath": "E:\\Farmer Project\\FarmerViewer\\Service\\Service.csproj"
+              "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Service.csproj": {
+                "projectPath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Service\\Service.csproj"
               }
             }
           }
@@ -390,7 +409,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

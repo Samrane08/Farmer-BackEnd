@@ -22,8 +22,8 @@ namespace UserService.Controllers
         private readonly IHttpClientService httpClientService;
         private readonly APIUrl urloptions;
 
-        public AdministratorController(IUserManagerService userManagerService,IMenuManagementService menuManagementService, UserManager<ApplicationUser> userManager,
-                                       IHttpClientService httpClientService,IOptions<APIUrl> urlOptions)
+        public AdministratorController(IUserManagerService userManagerService, IMenuManagementService menuManagementService, UserManager<ApplicationUser> userManager,
+                                       IHttpClientService httpClientService, IOptions<APIUrl> urlOptions)
         {
             this.userManagerService = userManagerService;
             this.menuManagementService = menuManagementService;
@@ -67,7 +67,8 @@ namespace UserService.Controllers
                     return RedirectToAction("RoleList");
                 else
                     return BadRequest(new { Message = "Failed to create role" });
-            }else
+            }
+            else
             {
                 return BadRequest(new { Message = "Invalid department name" });
             }
@@ -97,10 +98,10 @@ namespace UserService.Controllers
         }
 
         [HttpPost("entity-role-mapping")]
-     
+
         public async Task<IActionResult> EntityRoleMapping([FromBody] EntityRoleMappingRequest request)
         {
-            var result = await userManagerService.EntityRoleMapping(request.EntityTypeId,request.RoleId,request.Status);
+            var result = await userManagerService.EntityRoleMapping(request.EntityTypeId, request.RoleId, request.Status);
             if (result)
                 return Ok(new { Message = $"Entity Id : {request.EntityTypeId} and Role Id : {request.RoleId} mapped success." });
             else
@@ -129,10 +130,10 @@ namespace UserService.Controllers
         [HttpPost("update-menu-status")]
         public async Task<IActionResult> UpdateMenuStatus([FromBody] MenuStatusUpdateRequest request)
         {
-            var result = await menuManagementService.MenuStatusUpdate(request.MenuId,(int)request.Status);
+            var result = await menuManagementService.MenuStatusUpdate(request.MenuId, (int)request.Status);
             if (result)
             {
-                if((int)request.Status == 2)
+                if ((int)request.Status == 2)
                 {
                     return RedirectToAction("InActiveMenuList");
                 }
@@ -146,10 +147,10 @@ namespace UserService.Controllers
         }
 
         [HttpPost("entity-role-menu-map")]
-    
+
         public async Task<IActionResult> EntityRoleMenuMap([FromBody] EntityRoleMenuMapRequest request)
         {
-            var result = await menuManagementService.EntityRoleMenuMapping(request.EntityRoleId,request.MenuId,(int)request.Status);
+            var result = await menuManagementService.EntityRoleMenuMapping(request.EntityRoleId, request.MenuId, (int)request.Status);
             if (result)
             {
                 return Ok(new { Message = $"Entity role Id : {request.EntityRoleId} and Menu Id : {request.MenuId} mapped success." });
@@ -161,7 +162,7 @@ namespace UserService.Controllers
         }
 
         [HttpGet("get-menulist-by-entitymappingid")]
-        public async Task<IActionResult> GetMenuByEntityRole([FromBody]List<int> EntityMappingId)
+        public async Task<IActionResult> GetMenuByEntityRole([FromBody] List<int> EntityMappingId)
         {
             return Ok(await menuManagementService.GetMenuByRoleEntity(EntityMappingId));
         }
@@ -187,7 +188,7 @@ namespace UserService.Controllers
                 IdentityResult passwordChangeResult = await userManager.ResetPasswordAsync(user, resetToken, "Password@123");
                 if (passwordChangeResult.Succeeded)
                 {
-                   // var response = await httpClientService.RequestSend<bool>(HttpMethod.Post, $"{urloptions.HostelService}/account/update-first-login-reset-password", user.Id);
+                    // var response = await httpClientService.RequestSend<bool>(HttpMethod.Post, $"{urloptions.HostelService}/account/update-first-login-reset-password", user.Id);
                     return Ok(new { Status = true, Message = "Password Change Successfully." });
                 }
                 else
@@ -212,7 +213,8 @@ namespace UserService.Controllers
             {
                 var data = await userManagerService.GetDeptList();
                 return Ok(data);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return Ok(ex);
             }
@@ -258,11 +260,11 @@ namespace UserService.Controllers
 
         // endpoint for applicant reset password
 
-        [HttpPost("reset-applicant-password")] 
+        [HttpPost("reset-applicant-password")]
         [AllowAnonymous]
         public async Task<IActionResult> ResetPasswordApplicant([FromBody] string userName)
         {
-            var decUsername =AesAlgorithm.DecryptString(userName);
+            var decUsername = AesAlgorithm.DecryptString(userName);
             var subUsername = decUsername.Substring(5, decUsername.Length - 10);
             var user = await userManager.Users.SingleOrDefaultAsync(x => x.UserName == subUsername);
 
@@ -275,7 +277,7 @@ namespace UserService.Controllers
                     return Ok(new { Status = false, Message = "Not a valid Applicant Login" });
                 }
 
-               
+
                 var result = await userManagerService.ResetApplicantPassword(subUsername, "F91E15DBEC69FC40F81F0876E7009648");
                 //string resetToken = await userManager.GeneratePasswordResetTokenAsync(user);
                 //IdentityResult passwordChangeResult = await userManager.ResetPasswordAsync(user, resetToken, "123456@AliyaKaif");

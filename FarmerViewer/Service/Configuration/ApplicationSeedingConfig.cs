@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Model;
 using Model.Admin;
-using MySql.EntityFrameworkCore.Extensions;
+using Microsoft.EntityFrameworkCore;
 using Repository.Data;
 using Repository.Entity;
 using System;
@@ -20,16 +20,17 @@ public static class ApplicationSeedingConfig
     public async static Task AddSeed(this IServiceProvider serviceProvider)
     {
         var context = serviceProvider.GetRequiredService<ApplicationDbContext>();
-       
-        if (context.Database.IsMySql())
+
+        if (context.Database.IsSqlServer())
         {
-            // context.Database.Migrate();
+            context.Database.Migrate();
         }
+
         var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
         var roleManager = serviceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
-       
 
-       await ApplicationDbContextSeed.SeedDefaultUserAsync(userManager, roleManager, context);
+
+        await ApplicationDbContextSeed.SeedDefaultUserAsync(userManager, roleManager, context);
         //  await ApplicationDbContextSeed.SeedDefaultApplicantAsync(userManager, roleManager, context);
         // await ApplicationDbContextSeed.SeedDefaultWardenAsync(userManager, roleManager, context);
         // await ApplicationDbContextSeed.SeedAllWardenAsync(userManager, roleManager, context);
@@ -40,7 +41,7 @@ public static class ApplicationDbContextSeed
 {
     public static async Task SeedDefaultUserAsync(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager, ApplicationDbContext context)
     {
-        List<string> roles = new List<string> {"New_student" };
+        List<string> roles = new List<string> { "New_student" };
 
         foreach (string role in roles)
         {
@@ -76,7 +77,7 @@ public static class ApplicationDbContextSeed
         //    }
         //}
     }
-    public  static async Task SeedDefaultApplicantAsync(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager, ApplicationDbContext context)
+    public static async Task SeedDefaultApplicantAsync(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager, ApplicationDbContext context)
     {
         string roleName = "DDO";
         string deptName = "Social Justice & Special Assistance Department (SJSA)";
@@ -96,7 +97,7 @@ public static class ApplicationDbContextSeed
                 var result = await userManager.CreateAsync(applicant, "Password@123");
                 if (result.Succeeded)
                 {
-                    await userManager.AddToRoleAsync(applicant,  applicantRole.Name );
+                    await userManager.AddToRoleAsync(applicant, applicantRole.Name);
                     await context.AspNetUserNumericIdentity.AddAsync(new UserNumericIdentity { UserId = applicant.Id });
                     await context.SaveChangesAsync();
                 }
@@ -168,7 +169,7 @@ public static class ApplicationDbContextSeed
                     var result = await userManager.CreateAsync(warden, "Password@123");
                     if (result.Succeeded)
                     {
-                        await userManager.AddToRoleAsync(warden,  WardenRole.Name );
+                        await userManager.AddToRoleAsync(warden, WardenRole.Name);
                         await context.AspNetUserNumericIdentity.AddAsync(new UserNumericIdentity { UserId = warden.Id });
                         await context.SaveChangesAsync();
                     }
@@ -232,12 +233,12 @@ public static class ApplicationDbContextSeed
                     {
                         var WardenRole = new ApplicationRole(roleName, departmentId);
 
-                       
 
-                    if (roleManager.Roles.All(r => r.Name != WardenRole.Name))
-                    {
-                        await roleManager.CreateAsync(WardenRole);
-                    }
+
+                        if (roleManager.Roles.All(r => r.Name != WardenRole.Name))
+                        {
+                            await roleManager.CreateAsync(WardenRole);
+                        }
                         //var intlist = new int[]{ 92, 97, 104, 142, 194, 410, 430 };
                         //Data = Data.Where(x => intlist.Contains(x.HostelID)).ToList();
 

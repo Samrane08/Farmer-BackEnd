@@ -6,35 +6,52 @@ using Repository.Data;
 using Repository.Entity;
 using Repository.Implementation;
 using Repository.Interface;
+using System;
 
-namespace Repository.Configuration;
-public static class DependencyInjection
+namespace Repository.Configuration
 {
-    public static void RegisterRepository(this IServiceCollection services, IConfiguration configuration)
+    public static class DependencyInjection
     {
-        services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseMySQL(configuration.GetConnectionString("DefaultConnection")));
+        public static void RegisterRepository(this IServiceCollection services, IConfiguration configuration)
+        {
+            // -------------------------------
+            // DbContext for SQL Server
+            // -------------------------------
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    configuration.GetConnectionString("DefaultConnection"),
+                    sqlOptions => sqlOptions.MigrationsAssembly("UserService")
+                ));
 
-        services.AddScoped<IDapper, Dapperr>();
+            // -------------------------------
+            // Dapper service
+            // -------------------------------
+            services.AddScoped<IDapper, Dapperr>();
 
-        services.AddIdentityCore<ApplicationUser>(options =>
-                {
-                    options.SignIn.RequireConfirmedEmail = false;
-                    options.SignIn.RequireConfirmedPhoneNumber = false;
-                    
-                }).AddRoles<ApplicationRole>()
+            // -------------------------------
+            // Identity configuration
+            // -------------------------------
+            services.AddIdentityCore<ApplicationUser>(options =>
+            {
+                options.SignIn.RequireConfirmedEmail = false;
+                options.SignIn.RequireConfirmedPhoneNumber = false;
+            })
+                .AddRoles<ApplicationRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-        services.Configure<IdentityOptions>(options =>
-        {
-            options.Password.RequiredLength = 6;
-            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-            options.Lockout.MaxFailedAccessAttempts = 3;
-            options.Lockout.AllowedForNewUsers = true;
-            options.User.AllowedUserNameCharacters =
-            "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
-            options.User.RequireUniqueEmail = false;          
-        });
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequiredLength = 6;
+
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 3;
+                options.Lockout.AllowedForNewUsers = true;
+
+                options.User.AllowedUserNameCharacters =
+                    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+                options.User.RequireUniqueEmail = false;
+            });
+        }
     }
 }

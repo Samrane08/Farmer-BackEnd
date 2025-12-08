@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using MySql.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Metadata;
+
 
 #nullable disable
 
@@ -12,250 +13,297 @@ namespace Repository.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterDatabase()
-                .Annotation("MySQL:Charset", "utf8mb4");
-
             migrationBuilder.CreateTable(
-                name: "AspNetRoles",
-                columns: table => new
-                {
-                    Id = table.Column<string>(type: "varchar(255)", nullable: false),
-                    DepartmentId = table.Column<int>(type: "int", nullable: true),
-                    Name = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    NormalizedName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "longtext", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AspNetRoles", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+            name: "AspNetRoles",
+            columns: table => new
+            {
+                Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+
+                DepartmentId = table.Column<int>(type: "int", nullable: true),
+
+                Name = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                NormalizedName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+
+                ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true)
+            },
+            constraints: table =>
+            {
+                table.PrimaryKey("PK_AspNetRoles", x => x.Id);
+            });
+
 
             migrationBuilder.CreateTable(
                 name: "AspNetUserNumericIdentity",
                 columns: table => new
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    UserId = table.Column<string>(type: "longtext", nullable: true),
-                    SessionId = table.Column<string>(type: "longtext", nullable: true),
-                    LoginAt = table.Column<DateTime>(type: "datetime(6)", nullable: true)
+                        .Annotation("SqlServer:Identity", "1, 1"),   // SQL Server Identity
+
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
+                    SessionId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
+                    LoginAt = table.Column<DateTime>(type: "datetime2", nullable: true) // SQL Server datetime
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUserNumericIdentity", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(255)", nullable: false),
-                    UserId = table.Column<string>(type: "longtext", nullable: true),
-                    Password = table.Column<string>(type: "longtext", nullable: true),
-                    Name = table.Column<string>(type: "longtext", nullable: true),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
                     Status = table.Column<int>(type: "int", nullable: false),
-                    UserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    NormalizedUserName = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    Email = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    NormalizedEmail = table.Column<string>(type: "varchar(256)", maxLength: 256, nullable: true),
-                    EmailConfirmed = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    PasswordHash = table.Column<string>(type: "longtext", nullable: true),
-                    SecurityStamp = table.Column<string>(type: "longtext", nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "longtext", nullable: true),
-                    PhoneNumber = table.Column<string>(type: "longtext", nullable: true),
-                    PhoneNumberConfirmed = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    TwoFactorEnabled = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetime", nullable: true),
-                    LockoutEnabled = table.Column<bool>(type: "tinyint(1)", nullable: false),
+
+                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+
+                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+
+                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
+
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
+
+                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
+
+                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+
+                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
+
                     AccessFailedCount = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "departments",
                 columns: table => new
                 {
                     DepartmentID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    DepartmentName = table.Column<string>(type: "longtext", nullable: false),
-                    IsActive = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),   // SQL Server Identity
+
+                    DepartmentName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+
+                    IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_departments", x => x.DepartmentID);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "EntittyRoleMapping",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    RoleId = table.Column<string>(type: "longtext", nullable: false),
+                        .Annotation("SqlServer:Identity", "1, 1"),   // SQL Server Identity
+
+                    RoleId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+
                     EntityTypeId = table.Column<int>(type: "int", nullable: false),
+
                     Status = table.Column<int>(type: "int", nullable: false),
-                    Created = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    CreatedBy = table.Column<string>(type: "longtext", nullable: true),
-                    LastModified = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    LastModifiedBy = table.Column<string>(type: "longtext", nullable: true)
+
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
+
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
+                    LastModified = table.Column<DateTime>(type: "datetime2", nullable: true),
+
+                    LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_EntittyRoleMapping", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "EntityType",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    EntityTypeName = table.Column<string>(type: "longtext", nullable: true),
+                        .Annotation("SqlServer:Identity", "1, 1"),   // SQL Server Identity
+
+                    EntityTypeName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
                     Status = table.Column<int>(type: "int", nullable: false),
-                    Created = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    CreatedBy = table.Column<string>(type: "longtext", nullable: true),
-                    LastModified = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    LastModifiedBy = table.Column<string>(type: "longtext", nullable: true)
+
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
+
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
+                    LastModified = table.Column<DateTime>(type: "datetime2", nullable: true),
+
+                    LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_EntityType", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "ErrorLogger",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(255)", nullable: false),
-                    ErrorAt = table.Column<string>(type: "longtext", nullable: true),
-                    Exception = table.Column<string>(type: "longtext", nullable: true),
-                    CreatedOn = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    CreatedBy = table.Column<string>(type: "longtext", nullable: true)
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+
+                    ErrorAt = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
+                    Exception = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
+
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ErrorLogger", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "EventLogger",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(255)", nullable: false),
-                    UserId = table.Column<string>(type: "longtext", nullable: true),
-                    SessionId = table.Column<string>(type: "longtext", nullable: true),
-                    IPAddress = table.Column<string>(type: "longtext", nullable: true),
-                    RequestURL = table.Column<string>(type: "longtext", nullable: true),
-                    HttpMethod = table.Column<string>(type: "longtext", nullable: true),
-                    AbsoluteURL = table.Column<string>(type: "longtext", nullable: true),
-                    CreatedOn = table.Column<DateTime>(type: "datetime(6)", nullable: true)
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SessionId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IPAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    RequestURL = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    HttpMethod = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AbsoluteURL = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_EventLogger", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "logindetails",
                 columns: table => new
                 {
                     ID = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    UserId = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true),
-                    UserName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true),
-                    Password = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: true),
-                    EmailId = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true),
-                    MobileNo = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: true),
-                    FullName = table.Column<string>(type: "varchar(150)", maxLength: 150, nullable: true),
-                    FullName_mr = table.Column<string>(type: "varchar(150)", maxLength: 150, nullable: true),
+                        .Annotation("SqlServer:Identity", "1, 1"), // Identity column
+
+                    UserId = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    EmailId = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    MobileNo = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
+                    FullName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: true),
+                    FullName_mr = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: true),
                     Age = table.Column<int>(type: "int", nullable: true),
-                    Gender = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: true),
-                    DOB = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true),
-                    UserIdentity = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true),
-                    IsMobileVerified = table.Column<bool>(type: "tinyint(1)", nullable: true),
-                    IsEmailVerified = table.Column<bool>(type: "tinyint(1)", nullable: true),
-                    IsAadharVerified = table.Column<bool>(type: "tinyint(1)", nullable: true),
-                    IsFirstLogin = table.Column<bool>(type: "tinyint(1)", nullable: true),
-                    CreatedBy = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true),
-                    CreatedOn = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    LastModifiedBy = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true),
-                    LastModified = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    IsActive = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    IsDeleted = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    Domain = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true),
+                    Gender = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
+                    DOB = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    UserIdentity = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+
+                    IsMobileVerified = table.Column<bool>(type: "bit", nullable: true),
+                    IsEmailVerified = table.Column<bool>(type: "bit", nullable: true),
+                    IsAadharVerified = table.Column<bool>(type: "bit", nullable: true),
+                    IsFirstLogin = table.Column<bool>(type: "bit", nullable: true),
+
+                    CreatedBy = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    LastModifiedBy = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    LastModified = table.Column<DateTime>(type: "datetime2", nullable: true),
+
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+
+                    Domain = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     WorkflowId = table.Column<int>(type: "int", nullable: true),
                     DistrictId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_logindetails", x => x.ID);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "MenuMapping",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"), // SQL Server Identity
+
                     EntityMappingId = table.Column<int>(type: "int", nullable: false),
                     MenuId = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
-                    Created = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    CreatedBy = table.Column<string>(type: "longtext", nullable: true),
-                    LastModified = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    LastModifiedBy = table.Column<string>(type: "longtext", nullable: true)
+
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastModified = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_MenuMapping", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "MenuMaster",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    MenuName = table.Column<string>(type: "longtext", nullable: true),
-                    MenuNameMr = table.Column<string>(type: "longtext", nullable: true),
+                        .Annotation("SqlServer:Identity", "1, 1"), // SQL Server Identity
+
+                    MenuName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MenuNameMr = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
                     ParentId = table.Column<int>(type: "int", nullable: true),
-                    Url = table.Column<string>(type: "longtext", nullable: true),
-                    Icon = table.Column<string>(type: "longtext", nullable: true),
+                    Url = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Icon = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
                     Sort = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
-                    Created = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    CreatedBy = table.Column<string>(type: "longtext", nullable: true),
-                    LastModified = table.Column<DateTime>(type: "datetime(6)", nullable: true),
-                    LastModifiedBy = table.Column<string>(type: "longtext", nullable: true)
+
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastModified = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_MenuMaster", x => x.Id);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    RoleId = table.Column<string>(type: "varchar(255)", nullable: false),
-                    ClaimType = table.Column<string>(type: "longtext", nullable: true),
-                    ClaimValue = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("SqlServer:Identity", "1, 1"), // SQL Server Identity
+
+                    RoleId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -266,18 +314,19 @@ namespace Repository.Migrations
                         principalTable: "AspNetRoles",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "AspNetUserClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    UserId = table.Column<string>(type: "varchar(255)", nullable: false),
-                    ClaimType = table.Column<string>(type: "longtext", nullable: true),
-                    ClaimValue = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("SqlServer:Identity", "1, 1"), // SQL Server Identity
+
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ClaimType = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ClaimValue = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -288,8 +337,8 @@ namespace Repository.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                })
-                .Annotation("MySQL:Charset", "utf8mb4");
+                });
+
 
             migrationBuilder.CreateTable(
                 name: "AspNetUserLogins",

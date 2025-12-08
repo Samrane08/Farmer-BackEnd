@@ -18,7 +18,7 @@ namespace Service.Implementation
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<ApplicationRole> roleManager;
-    
+
         private readonly ApplicationDbContext context;
         private readonly ILogger<UserManagerService> logger;
         private readonly ICurrentUserService currentUserService;
@@ -35,7 +35,7 @@ namespace Service.Implementation
             this.logger = logger;
             this.currentUserService = currentUserService;
             this.dapper = dapper;
-          
+
         }
         public async Task<UserReponseModel?> ApplicantAuthentication(WebServiceUserModel model)
         {
@@ -63,7 +63,7 @@ namespace Service.Implementation
                         if (user.Succeeded)
                         {
                             var applicantRole = roleManager.FindByNameAsync("Applicant").Result;
-                            
+
                             await _userManager.AddToRolesAsync(applicant, new[] { applicantRole.Name });
                             var userNumericIdentity = new UserNumericIdentity { UserId = applicant.Id };
                             await context.AspNetUserNumericIdentity.AddAsync(userNumericIdentity);
@@ -87,7 +87,7 @@ namespace Service.Implementation
                     {
                         if (!string.IsNullOrWhiteSpace(model.Password) && (user.Password != model.Password))
                         {
-                            user.Password = model.Password;                           
+                            user.Password = model.Password;
                             await _userManager.UpdateAsync(user);
                         }
                     }
@@ -105,7 +105,7 @@ namespace Service.Implementation
         {
             return await roleManager.Roles.ToListAsync();
         }
-        public async Task<bool> CreateRoleAsync(string roleName,int deptId)
+        public async Task<bool> CreateRoleAsync(string roleName, int deptId)
         {
             var role = new ApplicationRole(roleName, deptId);
 
@@ -126,7 +126,8 @@ namespace Service.Implementation
             {
                 var data = await context.departments.Where(d => d.DepartmentName == deptName).SingleOrDefaultAsync();
                 return data.DepartmentID;
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return 0;
             }
@@ -135,7 +136,7 @@ namespace Service.Implementation
         {
             try
             {
-                var data = await context.Roles.Where(r=>r.Name.ToLower()== roleName.ToLower()).SingleOrDefaultAsync();
+                var data = await context.Roles.Where(r => r.Name.ToLower() == roleName.ToLower()).SingleOrDefaultAsync();
                 return data?.DepartmentId ?? 0;
             }
             catch (Exception ex)
@@ -143,7 +144,7 @@ namespace Service.Implementation
                 return 0;
             }
         }
-        
+
         public async Task<bool> UpdateRoleAsync(ApplicationRole role)
         {
             var existingRole = await roleManager.FindByIdAsync(role.Id);
@@ -192,7 +193,7 @@ namespace Service.Implementation
         {
             try
             {
-                var result = await context.EntittyRoleMapping.Where(x => x.EntityTypeId == EntityTypeId && x.RoleId == RoleId)
+                var result = await context.EntityRoleMapping.Where(x => x.EntityTypeId == EntityTypeId && x.RoleId == RoleId)
                                                              .FirstOrDefaultAsync();
                 if (result != null)
                 {
@@ -222,7 +223,7 @@ namespace Service.Implementation
             {
                 var roleList = await GetRoleList();
                 var entitylist = await context.EntityType.ToListAsync();
-                var rolemappinglist = await context.EntittyRoleMapping.ToListAsync();
+                var rolemappinglist = await context.EntityRoleMapping.ToListAsync();
 
                 if (rolemappinglist.Count > 0)
                 {
@@ -250,26 +251,26 @@ namespace Service.Implementation
         {
             try
             {
-               
+
                 List<string> roleids = null;
-                List<string> userRole=new List<string>().ToList();
+                List<string> userRole = new List<string>().ToList();
                 int? departmentId = 0;
                 var user = await _userManager.Users.SingleOrDefaultAsync(x => x.Id == UserId);
 
-             
+
 
                 if (user != null)
                 {
-                   
+
                     var roles = await _userManager.GetRolesAsync(user);
                     //var roledata = roleManager.FindByNameAsync(roles.FirstOrDefault().ToLower()).Result;
                     var roledata = GetDepartmentIdByRoleName(roles.FirstOrDefault()).Result;
                     if (deptId > 0)
                         departmentId = deptId;
                     else
-                       departmentId= roledata;
+                        departmentId = roledata;
 
-                  
+
 
                     if (departmentId == 1 && roles.Contains("Applicant"))
                     {
@@ -281,10 +282,11 @@ namespace Service.Implementation
                     else if (departmentId == 2 && roles.Contains("Applicant"))
                     {
                         userRole.Add("vjnt_applicant");
-                        roleids = await roleManager.Roles.Where( x => userRole.Contains(x.Name.ToLower()) && x.DepartmentId == departmentId)
+                        roleids = await roleManager.Roles.Where(x => userRole.Contains(x.Name.ToLower()) && x.DepartmentId == departmentId)
                                                           .Select(x => x.Id)
                                                           .ToListAsync();
-                    }else
+                    }
+                    else
                     {
                         roleids = await roleManager.Roles.Where(x => roles.Contains(x.Name) && x.DepartmentId == departmentId)
                                                       .Select(x => x.Id)
@@ -293,7 +295,7 @@ namespace Service.Implementation
                     }
 
 
-                    return await context.EntittyRoleMapping.Where(x => roleids.Contains(x.RoleId))
+                    return await context.EntityRoleMapping.Where(x => roleids.Contains(x.RoleId))
                                                            .Select(x => x.Id)
                                                            .ToListAsync();
                 }
@@ -304,7 +306,7 @@ namespace Service.Implementation
             {
                 return new List<int>();
             }
-        } 
+        }
         public async Task UserLoginSessionStore(string UserId, string SessionId)
         {
             try
@@ -321,7 +323,7 @@ namespace Service.Implementation
             {
 
             }
-        }       
+        }
         public async Task<long> CreateNumericId(string UserId)
         {
             try
@@ -341,19 +343,20 @@ namespace Service.Implementation
         {
             try
             {
-              
+
                 await context.logindetails.AddAsync(model);
                 await context.SaveChangesAsync();
                 return model.ID;
             }
-            catch(Exception) {
+            catch (Exception)
+            {
 
                 return 0;
             }
 
-           
+
         }
-      
+
 
         public async Task<logindetails> GetUserNumericId(string useridentity)
         {
@@ -361,13 +364,14 @@ namespace Service.Implementation
             {
                 var data = await context.logindetails.Where(x => x.UserIdentity == useridentity).FirstOrDefaultAsync();
                 return data;
-            }catch(Exception)
+            }
+            catch (Exception)
             {
                 return new logindetails();
             }
         }
 
-        public async Task<bool> UpdateAadharStatus(bool IsAadharVerified ,long UserId)
+        public async Task<bool> UpdateAadharStatus(bool IsAadharVerified, long UserId)
         {
             try
             {
@@ -384,15 +388,17 @@ namespace Service.Implementation
                     {
                         return false;
                     }
-                }else
+                }
+                else
                 {
                     return false;
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return false;
             }
-            
+
         }
 
         public async Task<VerifiedStatusModel> Getlogindetails()
@@ -406,7 +412,7 @@ namespace Service.Implementation
          IsAadharVerified = s.IsAadharVerified ?? false,
          IsEmailVerified = s.IsEmailVerified ?? false,
          IsMobileVerified = s.IsMobileVerified ?? false,
-         IsFirstLogin=s.IsFirstLogin ?? false
+         IsFirstLogin = s.IsFirstLogin ?? false
      })
      .FirstOrDefaultAsync();
                 if (data != null)
@@ -450,14 +456,15 @@ namespace Service.Implementation
         {
             try
             {
-               
+
                 var data = await context.departments.Select(x => new SelectModel
                 {
                     value = x.DepartmentID,
                     Text = x.DepartmentName
                 }).ToListAsync();
                 return data;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 throw ex;
@@ -468,14 +475,14 @@ namespace Service.Implementation
         {
             try
             {
-                var data = await context.Roles.Where(x=>x.DepartmentId== deptId)
+                var data = await context.Roles.Where(x => x.DepartmentId == deptId)
                     .Select(x => new RolesSelectModel { value = x.Id, Text = x.Name }).ToListAsync();
                 return data;
             }
-            catch (Exception ex) 
-            { 
-                throw ex; 
-            } 
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         public async Task<int> GetDeptIdByRoleName(string roleName)
         {
@@ -531,11 +538,11 @@ namespace Service.Implementation
             }
         }
 
-        public async Task<bool> ResetApplicantPassword(string userName,string Password)
+        public async Task<bool> ResetApplicantPassword(string userName, string Password)
         {
             try
             {
-                 var user = await _userManager.Users.SingleOrDefaultAsync(x => x.UserName == userName);
+                var user = await _userManager.Users.SingleOrDefaultAsync(x => x.UserName == userName);
                 if (user != null)
                 {
                     if (!string.IsNullOrWhiteSpace(Password) && (user.Password != Password))
@@ -550,8 +557,8 @@ namespace Service.Implementation
                     }
                 }
                 else
-                { 
-                    return false; 
+                {
+                    return false;
                 }
             }
             catch (Exception ex)
@@ -577,7 +584,7 @@ namespace Service.Implementation
                         {
 
 
-                            var administrator = new ApplicationUser { Name = username, UserName = username, Email = "deskuser2@gmail.com", Status = Repository.Enums.Status.Active};
+                            var administrator = new ApplicationUser { Name = username, UserName = username, Email = "deskuser2@gmail.com", Status = Repository.Enums.Status.Active };
 
                             if (!_userManager.Users.Any(u => u.UserName == administrator.UserName))
                             {
@@ -591,8 +598,8 @@ namespace Service.Implementation
                                     {
                                         UserIdentity = administrator.Id,
                                         //Password = model.Password,
-                                      //  EmailId = model.Email,
-                                       // MobileNo = model.Mobile,
+                                        //  EmailId = model.Email,
+                                        // MobileNo = model.Mobile,
                                         UserName = username,
                                         Domain = "NM",
                                         IsAadharVerified = false,
@@ -628,7 +635,7 @@ namespace Service.Implementation
                     var data = await context.logindetails.Where(x => x.ID == Convert.ToInt64(currentUserService.UserNumericId)).FirstOrDefaultAsync();
                     if (data != null)
                     {
-                        data.IsFirstLogin =false;
+                        data.IsFirstLogin = false;
                         await context.SaveChangesAsync();
                         return true;
                     }
@@ -659,8 +666,8 @@ namespace Service.Implementation
                     {
                         data.EmailId = m.Email;
                         data.MobileNo = m.PhoneNumber;
-                        data.IsMobileVerified=true;
-                        data.IsEmailVerified=true;
+                        data.IsMobileVerified = true;
+                        data.IsEmailVerified = true;
                         await context.SaveChangesAsync();
                         return true;
                     }
@@ -684,57 +691,57 @@ namespace Service.Implementation
         {
             try
             {
-                string roleName=string.Empty;
-                        if(model.WorkflowId==1)
-                           roleName = "SS_WorkflowOne";
-                        else if (model.WorkflowId==2)
-                          roleName = "SS_Inspector";
-                        else
-                         roleName = "SS_AssitComm";
+                string roleName = string.Empty;
+                if (model.WorkflowId == 1)
+                    roleName = "SS_WorkflowOne";
+                else if (model.WorkflowId == 2)
+                    roleName = "SS_Inspector";
+                else
+                    roleName = "SS_AssitComm";
 
                 string deptName = "Namankit";
-                    int departmentId = await context.departments.Where(d => d.DepartmentName == deptName).Select(d => d.DepartmentID).FirstOrDefaultAsync();
-                    if (departmentId > 0)
+                int departmentId = await context.departments.Where(d => d.DepartmentName == deptName).Select(d => d.DepartmentID).FirstOrDefaultAsync();
+                if (departmentId > 0)
+                {
+                    var administratorRole = new ApplicationRole(roleName, departmentId);
+
+                    if (roleManager.Roles.Any(r => r.Name.ToLower() == administratorRole.Name.ToLower()))
                     {
-                        var administratorRole = new ApplicationRole(roleName, departmentId);
 
-                        if (roleManager.Roles.Any(r => r.Name.ToLower() == administratorRole.Name.ToLower()))
+
+                        var administrator = new ApplicationUser { Name = model.UserName, UserName = model.UserName, Email = "deskuser2@gmail.com", Status = Repository.Enums.Status.Active };
+
+                        if (!_userManager.Users.Any(u => u.UserName == administrator.UserName))
                         {
-
-
-                            var administrator = new ApplicationUser { Name = model.UserName, UserName = model.UserName, Email = "deskuser2@gmail.com", Status = Repository.Enums.Status.Active };
-
-                            if (!_userManager.Users.Any(u => u.UserName == administrator.UserName))
+                            var result = await _userManager.CreateAsync(administrator, "Pass@123");
+                            if (result.Succeeded)
                             {
-                                var result = await _userManager.CreateAsync(administrator, "Pass@123");
-                                if (result.Succeeded)
+                                await _userManager.AddToRoleAsync(administrator, administratorRole.Name);
+                                await context.AspNetUserNumericIdentity.AddAsync(new UserNumericIdentity { UserId = administrator.Id });
+                                await context.SaveChangesAsync();
+                                var logindetails = new logindetails
                                 {
-                                    await _userManager.AddToRoleAsync(administrator, administratorRole.Name);
-                                    await context.AspNetUserNumericIdentity.AddAsync(new UserNumericIdentity { UserId = administrator.Id });
-                                    await context.SaveChangesAsync();
-                                    var logindetails = new logindetails
-                                    {
-                                        UserIdentity = administrator.Id,
-                                        DistrictId=model.DistrictId,
-                                        WorkflowId=model.WorkflowId,
-                                        UserName = model.UserName,
-                                        Domain = "NM",
-                                        IsAadharVerified = false,
-                                        IsEmailVerified = false,
-                                        IsMobileVerified = false,
-                                        IsFirstLogin = true,
-                                        CreatedOn = DateTime.Now,
-                                        CreatedBy = "admin"
-                                    };
-                                    await SaveloginDetails(logindetails);
+                                    UserIdentity = administrator.Id,
+                                    DistrictId = model.DistrictId,
+                                    WorkflowId = model.WorkflowId,
+                                    UserName = model.UserName,
+                                    Domain = "NM",
+                                    IsAadharVerified = false,
+                                    IsEmailVerified = false,
+                                    IsMobileVerified = false,
+                                    IsFirstLogin = true,
+                                    CreatedOn = DateTime.Now,
+                                    CreatedBy = "admin"
+                                };
+                                await SaveloginDetails(logindetails);
 
-                                }
                             }
                         }
                     }
+                }
 
 
-                
+
                 return true;
             }
             catch (Exception ex)
@@ -750,7 +757,7 @@ namespace Service.Implementation
             return data;
         }
     }
-   
+
 
 
 

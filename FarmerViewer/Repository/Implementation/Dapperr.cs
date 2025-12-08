@@ -1,5 +1,5 @@
 ﻿using Dapper;
-using MySql.Data.MySqlClient;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Repository.Interface;
 using System.Data;
@@ -17,7 +17,7 @@ public class Dapperr : IDapper
     }
     public DbConnection GetDbconnection()
     {
-        return new MySqlConnection(_config.GetConnectionString(Connectionstring));
+        return new SqlConnection(_config.GetConnectionString(Connectionstring));
     }
     public void Dispose()
     {
@@ -25,23 +25,23 @@ public class Dapperr : IDapper
     }
     public int Execute(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
     {
-        using IDbConnection db = new MySqlConnection(_config.GetConnectionString(Connectionstring));
+        using IDbConnection db = new SqlConnection(_config.GetConnectionString(Connectionstring));
         return db.Execute(sp, parms, commandType: commandType);
     }
     public T Get<T>(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
     {
-        using IDbConnection db = new MySqlConnection(_config.GetConnectionString(Connectionstring));
+        using IDbConnection db = new SqlConnection(_config.GetConnectionString(Connectionstring));
         return db.Query<T>(sp, parms, commandType: commandType).FirstOrDefault();
     }
     public List<T> GetAll<T>(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
     {
-        using IDbConnection db = new MySqlConnection(_config.GetConnectionString(Connectionstring));
+        using IDbConnection db = new SqlConnection(_config.GetConnectionString(Connectionstring));
         return db.Query<T>(sp, parms, commandType: commandType).ToList();
     }
     public T Insert<T>(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
     {
         T result;
-        using IDbConnection db = new MySqlConnection(_config.GetConnectionString(Connectionstring));
+        using IDbConnection db = new SqlConnection(_config.GetConnectionString(Connectionstring));
         try
         {
             if (db.State == ConnectionState.Closed)
@@ -52,7 +52,7 @@ public class Dapperr : IDapper
             {
                 result = db.Query<T>(sp, parms, commandType: commandType, transaction: tran).FirstOrDefault();
                 tran.Commit();
-                
+
             }
             catch (Exception ex)
             {
@@ -74,7 +74,7 @@ public class Dapperr : IDapper
     public T Update<T>(string sp, DynamicParameters parms, CommandType commandType = CommandType.StoredProcedure)
     {
         T result;
-        using IDbConnection db = new MySqlConnection(_config.GetConnectionString(Connectionstring));
+        using IDbConnection db = new SqlConnection(_config.GetConnectionString(Connectionstring));
         try
         {
             if (db.State == ConnectionState.Closed)

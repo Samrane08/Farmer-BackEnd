@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vpA2Jq7iLjU=",
+  "dgSpecHash": "a+DB6L7TFVI=",
   "success": true,
-  "projectFilePath": "E:\\Farmer Project\\FarmerViewer\\Helper\\Helper.csproj",
+  "projectFilePath": "D:\\VS2022Projects\\Farmer-BackEnd\\FarmerViewer\\Helper\\Helper.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sameer.rane\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\subhajit.chakraborty\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -10,3 +10,18 @@ E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.dll
 E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\refint\Repository.dll
 E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\Repository.pdb
 E:\Farmer Project\FarmerViewer\Repository\obj\Debug\net8.0\ref\Repository.dll
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\bin\Debug\net8.0\Repository.deps.json
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\bin\Debug\net8.0\Repository.runtimeconfig.json
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\bin\Debug\net8.0\Repository.dll
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\bin\Debug\net8.0\Repository.pdb
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.sourcelink.json
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.dll
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\refint\Repository.dll
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.pdb
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\Repository.genruntimeconfig.cache
+D:\VS2022Projects\Farmer-BackEnd\FarmerViewer\Repository\obj\Debug\net8.0\ref\Repository.dll

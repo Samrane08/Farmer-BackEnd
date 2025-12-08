@@ -33,7 +33,6 @@ builder.Services.Configure<JwtIssuerOptions>(options =>
 builder.Services.AddSingleton<ICurrentUserService, CurrentUserService>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddHealthChecks();
-builder.Services.AddTransient<ICurrentUserService, CurrentUserService>();
 builder.Services.AddTransient<ISessionService, SessionService>();
 builder.Services.Configure<APIUrl>(builder.Configuration.GetSection(nameof(APIUrl)));
 builder.Services.Configure<AppleSarkarCred>(builder.Configuration.GetSection(nameof(AppleSarkarCred)));

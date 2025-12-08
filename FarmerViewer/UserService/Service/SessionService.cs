@@ -1,13 +1,12 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
-using MySqlX.XDevAPI;
 using Newtonsoft.Json;
 using Repository.Interface;
 using Service.Interface;
 using UserService.Helper;
 
 namespace UserService.Service
-{ 
+{
     // SessionService.cs
     public class SessionService : ISessionService
     {
@@ -26,9 +25,9 @@ namespace UserService.Service
         //public async Task StoreSessionInRedis(string userId, string sessionId)
         //{
         //    var db = _redis.GetDatabase();
-            
+
         //    var sessionData = await db.StringGetAsync(userId);
-            
+
         //    if (sessionData.HasValue && sessionData != sessionId)
         //        db.KeyDelete(userId);
 
@@ -56,12 +55,12 @@ namespace UserService.Service
                 _cacheService.Remove(userId);
             }
 
-            
+
             _cacheService.Set(userId, sessionId, TimeSpan.FromMinutes(30));
 
         }
 
-        public async Task<bool> GetSessionFromMemoryCache(string userId,string SeassionId)
+        public async Task<bool> GetSessionFromMemoryCache(string userId, string SeassionId)
         {
             if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(SeassionId))
                 return false; // Invalid inputs
@@ -74,7 +73,7 @@ namespace UserService.Service
         public async Task<bool> RemoveKeyMemoryCache(string userId)
         {
             _cacheService.Remove(userId);
-            return  true;
+            return true;
         }
     }
 }

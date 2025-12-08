@@ -6,22 +6,22 @@ using Repository.Interface;
 
 namespace Repository.Data;
 
-public class ApplicationDbContext :IdentityDbContext<ApplicationUser, ApplicationRole, string>
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
 {
     private readonly ICurrentUserService currentUserService;
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, ICurrentUserService currentUserService) :base(options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, ICurrentUserService currentUserService) : base(options)
     {
         this.currentUserService = currentUserService;
     }
     public DbSet<UserNumericIdentity> AspNetUserNumericIdentity { get; set; }
     public DbSet<EntityType> EntityType { get; set; }
-    public DbSet<EntityRoleMapping> EntittyRoleMapping { get; set; }
+    public DbSet<EntityRoleMapping> EntityRoleMapping { get; set; }
     public DbSet<MenuMaster> MenuMaster { get; set; }
     public DbSet<MenuMapping> MenuMapping { get; set; }
     public DbSet<EventLogger> EventLogger { get; set; }
     public DbSet<ErrorLogger> ErrorLogger { get; set; }
 
- 
+
 
     public DbSet<logindetails> logindetails { get; set; }
 

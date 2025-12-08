@@ -7,7 +7,6 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Model;
 using Model.Admin;
-using MySqlX.XDevAPI;
 using Newtonsoft.Json.Linq;
 using Repository.Entity;
 using Repository.Interface;
@@ -123,10 +122,10 @@ public class AccountController : APIBaseController
             }
 
             var user = await userManager.Users.SingleOrDefaultAsync(x => x.UserName == model.UserName);
-          
+
             if (user != null)
             {
-                var logindetails= await userManagerService.GetLogindetailByUserName(model.UserName);
+                var logindetails = await userManagerService.GetLogindetailByUserName(model.UserName);
                 if (!string.IsNullOrEmpty(logindetails.MobileNo))
                 {
                     await clientService.RequestSend<object>(HttpMethod.Post, $"{urloptions.NotificationService}/OTP/SMS/Send", logindetails.MobileNo);
@@ -198,9 +197,9 @@ public class AccountController : APIBaseController
                             {
                                 return Ok(new { Status = false, Message = "OTP Verify failed." });
                             }
-                           // user.Password = model.NewPassword;
-                           // var result1 = await userManager.UpdateAsync(user);
-                         //   return Ok(new { Status = true, Message = "Password Change Successfully." });
+                            // user.Password = model.NewPassword;
+                            // var result1 = await userManager.UpdateAsync(user);
+                            //   return Ok(new { Status = true, Message = "Password Change Successfully." });
                         }
                         else
                         {
@@ -262,7 +261,7 @@ public class AccountController : APIBaseController
 
             var roles = await userManager.GetRolesAsync(user);
             var roleName = roles.FirstOrDefault() ?? "NoRole";
-          
+
 
             if (result == PasswordVerificationResult.Success)
             {
@@ -287,7 +286,7 @@ public class AccountController : APIBaseController
                         user.Name,
                         roleName,
                         LoginAt = DateTime.Now,
-                       // IsNew = IsNewSchool
+                        // IsNew = IsNewSchool
                     });
                 }
                 else
