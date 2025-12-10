@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "UserService\\UserService.csproj",
+        "Path": "userservice\\UserService\\UserService.csproj",
         "Action": "Start"
       }
     ]

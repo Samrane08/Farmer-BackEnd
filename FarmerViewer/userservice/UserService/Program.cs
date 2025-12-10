@@ -15,6 +15,7 @@ builder.Services.AddSingleton(jwtSettings);
 builder.Services.AddControllers();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddSingleton<ITokenService, TokenService>();
+builder.Services.AddScoped<IMenuRepository, MenuRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

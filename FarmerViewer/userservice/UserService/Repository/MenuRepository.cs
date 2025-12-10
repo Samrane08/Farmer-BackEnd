@@ -6,7 +6,7 @@ using UserService.Models.ResponseDto;
 
 namespace UserService.Repository
 {
-    public class MenuRepository
+    public class MenuRepository : IMenuRepository
     {
         private readonly IConfiguration _config;
         private readonly string _connectionString;
@@ -32,5 +32,23 @@ namespace UserService.Repository
                 return [.. result];
             }
         }
+
+        public async Task<List<SubMenuResponseDto>> GetSubMenusAsync(int roleId, int menuId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var param = new DynamicParameters();
+                param.Add("@RoleId", roleId);
+                param.Add("@MenuId", menuId);
+
+                var result = await connection.QueryAsync<SubMenuResponseDto>(
+                    "USP_GetSubMenuNamesByRoleMenu",
+                    param,
+                    commandType: CommandType.StoredProcedure);
+
+                return [.. result];
+            }
+        }
+
     }
 }

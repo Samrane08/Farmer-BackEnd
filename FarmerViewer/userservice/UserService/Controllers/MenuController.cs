@@ -18,7 +18,7 @@ namespace UserService.Controllers
             _menuRepository = menuRepository;
         }
 
-        [HttpPost]
+        [HttpPost("GetMenus")]
         [Authorize]
         public async Task<IActionResult> GetMenus([FromBody] MenuRequest menuRequest)
         {
@@ -40,21 +40,22 @@ namespace UserService.Controllers
                     "An error occurred while fetching menu details.");
             }
         }
-        [HttpPost]
+
+        [HttpPost("GetSubMenus")]
         [Authorize]
         public async Task<IActionResult> GetSubMenus([FromBody] SubMenuRequest subMenuRequest)
         {
-            if (menuRequest == null || menuRequest.RoleId <= 0)
-                return BadRequest("Invalid request. RoleId is required.");
+            if (subMenuRequest == null || subMenuRequest.RoleId <= 0 || subMenuRequest.MenuId <=0)
+                return BadRequest("Invalid request.");
 
             try
             {
-                var menus = await _menuRepository.GetMenuByRoleIdAsync(subMenuRequest.RoleId, subMenuRequest.MenuId);
+                var SubMenus = await _menuRepository.GetSubMenusAsync(subMenuRequest.RoleId, subMenuRequest.MenuId);
 
-                if (menus == null || !menus.Any())
+                if (SubMenus == null || !SubMenus.Any())
                     return NotFound("No menus found for the given RoleId.");
 
-                return Ok(menus);
+                return Ok(SubMenus);
             }
             catch (Exception ex)
             {

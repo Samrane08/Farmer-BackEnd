@@ -39,7 +39,8 @@ namespace UserService.Repository
                     user.Token = _tokenService.GenerateToken(
                         user.FullName,
                         user.RoleId,
-                        user.BankId
+                        user.BankId,
+                        user.DistrictId
                     );
 
                     user.Success = true;

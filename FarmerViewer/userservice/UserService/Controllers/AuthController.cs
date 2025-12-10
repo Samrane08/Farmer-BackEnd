@@ -48,10 +48,7 @@ namespace UserService.Controllers
                 var response = await _auth.CheckLoginAsync(request.UserId, encPassword);
                 return Ok(new
                 {
-                    response.Token,
-                    response.FullName,
-                    response.BankId,
-                    response.RoleId
+                    response.Token
                 });
             }
             catch
