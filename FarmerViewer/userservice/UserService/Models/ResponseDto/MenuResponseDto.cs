@@ -2,8 +2,7 @@
 {
     public class MenuResponseDto
     {
-        public string ServiceName { get; set; }
-        public string ControllerName { get; set; }
-        public string ActionMethod { get; set; }
+        int MenuId { get; set; }
+        string MenuName { get; set; }
     }
 }
