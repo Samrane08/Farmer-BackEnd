@@ -29,11 +29,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"], //new added
-            ValidAudience = builder.Configuration["Jwt:Audience"], // new added
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
         };
-        // options.TokenValidationParameters.ClockSkew = TimeSpan.Zero; //commented
     });
 builder.Services.AddResponseCompression(options =>
 {

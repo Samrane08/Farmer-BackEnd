@@ -5,6 +5,6 @@ namespace UserService.Interface
 {
     public interface IAuthRepository
     {
-        Task<LoginResponse> CheckLoginAsync(LoginRequest loginRequest);
+        Task<LoginResponse> CheckLoginAsync(string userId, string Password);
     }
 }

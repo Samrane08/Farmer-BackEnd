@@ -20,13 +20,13 @@ namespace UserService.Repository
             _tokenService = tokenService;
         }
 
-        public async Task<LoginResponse> CheckLoginAsync(LoginRequest loginRequest)
+        public async Task<LoginResponse> CheckLoginAsync(string userId, string Password)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 var parameters = new DynamicParameters();
-                parameters.Add("@UserId", loginRequest.UserId);
-                parameters.Add("@Password", loginRequest.Password);
+                parameters.Add("@UserId", userId);
+                parameters.Add("@Password", Password);
 
                 var user = await connection.QueryFirstOrDefaultAsync<LoginResponse>(
                     "USP_CheckLogin",

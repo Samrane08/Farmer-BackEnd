@@ -1,22 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
+using System.Security.Cryptography;
+using UserService.Helpers;
 using UserService.Interface;
 using UserService.Models.QueryDto;
 using UserService.Models.ResponseDto;
 
 namespace UserService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("fv_user-service/api/[controller]")]
     [ApiController]
-    public class AccountController : ControllerBase
+    public class AuthController : ControllerBase
     {
         private readonly IAuthRepository _auth;
-
-        public AccountController(IAuthRepository auth)
+        public AuthController(IAuthRepository auth)
         {
             _auth = auth;
         }
 
-        [HttpPost("user-login")]
+        [HttpPost("UserLogin")]
         public async Task<IActionResult> UserLogin([FromBody] LoginRequest request)
         {
             if (request == null)
@@ -37,7 +40,11 @@ namespace UserService.Controllers
                 });
             }
 
-            var response = await _auth.CheckLoginAsync(request);
+            var dPassword = AesAlgorithm.DecryptString(request.Password);
+            var password = dPassword.Substring(5, dPassword.Length - 10);
+            var encPassword = AesAlgorithm.EncryptString(password);
+
+            var response = await _auth.CheckLoginAsync(request.UserId, encPassword);
             return Ok(new
             {
                 response.Token,
