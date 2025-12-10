@@ -39,19 +39,29 @@ namespace UserService.Controllers
                     Message = "UserId and Password are required"
                 });
             }
-
-            var dPassword = AesAlgorithm.DecryptString(request.Password);
-            var password = dPassword.Substring(5, dPassword.Length - 10);
-            var encPassword = AesAlgorithm.EncryptString(password);
-
-            var response = await _auth.CheckLoginAsync(request.UserId, encPassword);
-            return Ok(new
+            try
             {
-                response.Token,
-                response.FullName,
-                response.BankId,
-                response.RoleId
-            });
+                var dPassword = AesAlgorithm.DecryptString(request.Password);
+                var password = dPassword.Substring(5, dPassword.Length - 10);
+                var encPassword = AesAlgorithm.EncryptString(password);
+
+                var response = await _auth.CheckLoginAsync(request.UserId, encPassword);
+                return Ok(new
+                {
+                    response.Token,
+                    response.FullName,
+                    response.BankId,
+                    response.RoleId
+                });
+            }
+            catch
+            {
+                return BadRequest(new LoginResponse
+                {
+                    Success = false,
+                    Message = "UserID and Password does not match"
+                });
+            }
         }
     }
 }
