@@ -2,7 +2,7 @@
 {
     public class SubMenuResponseDto
     {
-        public int SubMenu { get; set; }
+        public string SubMenu { get; set; }
         public string navigation { get; set; }
     }
 }

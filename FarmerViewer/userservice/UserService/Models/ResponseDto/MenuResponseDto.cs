@@ -2,7 +2,7 @@
 {
     public class MenuResponseDto
     {
-        int MenuId { get; set; }
-        string MenuName { get; set; }
+        public int MenuId { get; set; }
+        public string MenuName { get; set; }
     }
 }

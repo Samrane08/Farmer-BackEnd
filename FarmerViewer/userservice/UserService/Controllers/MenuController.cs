@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using UserService.Models.QueryDto;
 using UserService.Interface;
+using UserService.Models.ResponseDto;
 
 namespace UserService.Controllers
 {
@@ -31,7 +32,7 @@ namespace UserService.Controllers
 
                 if (menus == null || !menus.Any())
                     return NotFound("No menus found for the given RoleId.");
-
+                //var result = menus.Select(m => new MenuResponseDto { MenuId = m.MenuId, MenuName = m.MenuName }).ToList();
                 return Ok(menus);
             }
             catch (Exception ex)
