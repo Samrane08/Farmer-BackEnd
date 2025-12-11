@@ -18,14 +18,15 @@ public class TokenService : ITokenService
         _config = config;
     }
 
-    public string GenerateToken(string fullName, int roleId, int bankId, int districtId)
+    public string GenerateToken(string fullName, int roleId, int bankId, int districtId, string dfp)
     {
         var claims = new[]
             {
             new Claim("Name", fullName),
             new Claim("RoleId", roleId.ToString()),
             new Claim("BankId", bankId.ToString()),
-            new Claim("DistrictId", districtId.ToString())
+            new Claim("DistrictId", districtId.ToString()),
+            new Claim("dfp", dfp)
             };
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:secretKey"]));

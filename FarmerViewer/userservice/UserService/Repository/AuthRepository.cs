@@ -20,7 +20,7 @@ namespace UserService.Repository
             _tokenService = tokenService;
         }
 
-        public async Task<LoginResponse> CheckLoginAsync(string userId, string Password)
+        public async Task<LoginResponse> CheckLoginAsync(string userId, string Password, string dfp)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -40,9 +40,9 @@ namespace UserService.Repository
                         user.FullName,
                         user.RoleId,
                         user.BankId,
-                        user.DistrictId
+                        user.DistrictId,
+                        dfp
                     );
-
                     user.Success = true;
                     user.Message = "Login successful";
                     return user;
